@@ -36,7 +36,7 @@ class App extends React.Component{
                 pokemonName: pkName
                 
             })
-            console.log(pokemon);
+            
         })
         e.preventDefault();
         
