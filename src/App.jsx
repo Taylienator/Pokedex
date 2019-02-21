@@ -36,7 +36,7 @@ class App extends React.Component{
                 pokemonName: pkName
                 
             })
-            
+            console.log(pokemon)
         })
         e.preventDefault();
         
@@ -50,8 +50,11 @@ class App extends React.Component{
                         <input type="text" onChange= {this.handleInput} placeholder='enter your pokemon!' value={this.state.pokemon}/>
                         <input type="submit" value="Submit" />
                     </form>
-                {this.state.pokemonName && 
-                    <p>Your Pokemon is {this.state.pokemonName}!!</p> }
+                {this.state.pokemonName &&
+                    <div align='center'>
+                    <img src={this.state.pokemonImage} />
+                    <p>Your Pokemon is {this.state.pokemonName}!!</p>
+                    </div> }
             </div>
         )
     }
